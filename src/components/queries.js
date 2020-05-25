@@ -64,7 +64,7 @@ class Queries extends React.Component {
         <h1>{this.state.questions}</h1>
         {options.map(option => (
           <p
-            key={option.id}
+            key={option}
             onClick={() => this.checkAnser(option)}
             className={myAns === option ? "selected" : ""}
           >
